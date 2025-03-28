@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Miss You</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div id="content">
+        <h2 id="quote">"As we say goodbye, it feels like leaving behind a piece of ourselves. The halls will grow quiet, but the echoes of our laughter and memories will always linger in our hearts."</h2>
+        <h1 id="message">Miss you, {{ name }}!</h1>
+        <p id="author">-by Obed</p>
+    </div>
+    <video autoplay loop muted>
+        <source src="{{ url_for('static', filename='background.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
